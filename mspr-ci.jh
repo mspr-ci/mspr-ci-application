@@ -1,0 +1,14 @@
+entity Order {
+	productName String
+    quantity Int
+    price Int
+    buyerName String
+    date Date
+}
+
+entity Invoice {
+	enterprise String
+    price Int
+    vat	Int
+    date Date
+}
