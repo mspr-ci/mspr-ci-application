@@ -12,3 +12,10 @@ entity Invoice {
     vat	Integer
     date LocalDate
 }
+
+entity Consumer {
+	firstname String
+    lastname String
+    phoneNumber String
+    dateOfBirth LocalDate
+}
