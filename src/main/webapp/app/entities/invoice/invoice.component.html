@@ -1,0 +1,67 @@
+<div>
+    <h2 id="page-heading">
+        <span>Invoices</span>
+
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-invoice" [routerLink]="['/invoice/new']">
+            <fa-icon icon="plus"></fa-icon>
+            <span>
+            Create a new Invoice
+            </span>
+        </button>
+    </h2>
+
+    <jhi-alert-error></jhi-alert-error>
+
+    <jhi-alert></jhi-alert>
+
+    <div class="alert alert-warning" id="no-result" *ngIf="invoices?.length === 0">
+        <span>No invoices found</span>
+    </div>
+
+    <div class="table-responsive" id="entities" *ngIf="invoices?.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+                <tr>
+                    <th scope="col" ><span>ID</span></th>
+                    <th scope="col" ><span>Enterprise</span></th>
+                    <th scope="col" ><span>Price</span></th>
+                    <th scope="col" ><span>Vat</span></th>
+                    <th scope="col" ><span>Date</span></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let invoice of invoices ;trackBy: trackId">
+                    <td><a [routerLink]="['/invoice', invoice.id, 'view']">{{ invoice.id }}</a></td>
+                    <td>{{ invoice.enterprise }}</td>
+                    <td>{{ invoice.price }}</td>
+                    <td>{{ invoice.vat }}</td>
+                    <td>{{ invoice.date | date:'mediumDate' }}</td>
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <button type="submit"
+                                    [routerLink]="['/invoice', invoice.id, 'view']"
+                                    class="btn btn-info btn-sm">
+                                <fa-icon icon="eye"></fa-icon>
+                                <span class="d-none d-md-inline">View</span>
+                            </button>
+
+                            <button type="submit"
+                                    [routerLink]="['/invoice', invoice.id, 'edit']"
+                                    class="btn btn-primary btn-sm">
+                                <fa-icon icon="pencil-alt"></fa-icon>
+                                <span class="d-none d-md-inline">Edit</span>
+                            </button>
+
+                            <button type="submit" (click)="delete(invoice)"
+                                    class="btn btn-danger btn-sm">
+                                <fa-icon icon="times"></fa-icon>
+                                <span class="d-none d-md-inline">Delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
