@@ -4,6 +4,8 @@ This application was generated using JHipster 6.7.1, you can find documentation 
 
 ![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/Manon-Rbd/mspr-ci-application)
 
+![Suivez moi sur twitter !](https://img.shields.io/twitter/follow/LeFaou?style=social)
+
 ## Development
 
 Before you can build this project, you must install and configure the following dependencies on your machine:
