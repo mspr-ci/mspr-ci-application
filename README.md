@@ -4,7 +4,8 @@ This application was generated using JHipster 6.7.1, you can find documentation 
 
 ![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/Manon-Rbd/mspr-ci-application)
 
-![Suivez moi sur twitter !](https://img.shields.io/twitter/follow/LeFaou?style=social)
+![Suivez Riwal sur twitter !](https://img.shields.io/twitter/follow/LeFaou?style=social)
+![Suivez Simon sur twitter !](https://img.shields.io/twitter/follow/SPerols?style=social)
 
 ## Development
 
