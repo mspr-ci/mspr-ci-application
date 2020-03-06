@@ -2,6 +2,8 @@
 
 This application was generated using JHipster 6.7.1, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v6.7.1](https://www.jhipster.tech/documentation-archive/v6.7.1).
 
+![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/Manon-Rbd/mspr-ci-application)
+
 ## Development
 
 Before you can build this project, you must install and configure the following dependencies on your machine:
