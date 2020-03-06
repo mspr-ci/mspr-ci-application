@@ -3,7 +3,7 @@
 This application was generated using JHipster 6.7.1, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v6.7.1](https://www.jhipster.tech/documentation-archive/v6.7.1).
 
 ![Gitlab pipeline status](https://img.shields.io/github/languages/code-size/Manon-Rbd/mspr-ci-application)
-![Code size](https://img.shields.io/github/languages/code-size/mspr-ci/mspr-ci-application)
+![Open issues](https://img.shields.io/github/issues/mspr-ci/mspr-ci-application)
 
 Suivez l'équipe sur Twitter !
 <p>
